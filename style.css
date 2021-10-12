@@ -1,0 +1,638 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap");
+
+body {
+  background-color: #Fafafa;
+  margin: 0;
+  padding: 0;
+  font-family: "Commissioner", sans-serif;
+}
+
+parent_element {
+  width: 100%;
+}
+.first_child {
+  background-image: url(./images/image-hero-desktop.jpg);
+  height: 350px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.first_child nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.first_child nav ul {
+  display: inline;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.first_child nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 25px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+section {
+  background-color: hsl(0, 0%, 100%);
+  border: 1x solid hsl(0, 0%, 48%);
+  /* margin: 20px auto; */
+  width: 65%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product_description {
+  padding: 10px;
+  margin: -45px auto 10px;
+  text-align: center;
+}
+
+/* .product_description img{
+   margin: -20px auto;
+} */
+
+/* #mastercraft{
+     margin: -20px auto;
+} */
+
+.mastercraft_logo {
+  margin: -35px auto;
+  width: 20px;
+}
+
+.product {
+  margin-top: 50px;
+}
+
+.product h3 {
+  font-size: 22px;
+  color: hsl(0, 0%, 0%);
+  font-family: "Commissioner", sans-serif;
+}
+
+.product p {
+  font-size: 16px;
+  color: hsl(0, 0%, 48%);
+  font-family: "Commissioner", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 10px auto;
+}
+
+#back {
+  background-color: hsl(176, 50%, 47%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(176, 50%, 47%);
+  /* padding: 10px 25px; */
+  height: 48px;
+  /* width: 127px; */
+  /* margin: 20px; */
+  width: 135px;
+  border-radius: 35px;
+  font-family: "Commissioner", sans-serif;
+}
+
+#back:hover{
+  cursor: pointer;
+}
+
+#bookmark {
+  height: 48px;
+  background-color: hsl(0, 0%, 48%);
+  color: hsl(0, 0%, 0%);
+  border: 1px solid hsl(0, 0%, 48%);
+  border-radius: 35px;
+  /* padding: 10px 0; */
+  padding-top: 10px;
+  padding-bottom: 7px;
+  padding-left: 0px;
+  padding-right: 20px;
+  font-family: "Commissioner", sans-serif;
+  /* width: 135px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bookmark:hover{
+  cursor: pointer;
+}
+
+#bookmark img {
+  height: 50px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-bottom: 0%;
+}
+
+.product_numbers {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.product_numbers_back {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product_backed {
+  text-align: center;
+}
+
+.product_backed h3 {
+  font-size: 22px;
+  color: hsl(0, 0%, 0%);
+  font-family: "Commissioner", sans-serif;
+}
+
+.product_backed p {
+  font-size: 16px;
+  color: hsl(0, 0%, 48%);
+  font-family: "Commissioner", sans-serif;
+}
+
+.line {
+  /* width: 5rem; */
+  height: 60px;
+  /* background-color:  hsl(0, 0%, 48%); */
+  border-left: 2px solid hsl(0, 0%, 48%);
+}
+
+/* .range_input{
+    width: 90%;
+    margin: 0 auto;
+} */
+
+.slider-container {
+  /* position: relative; */
+  width: 90%;
+  margin: 10px auto;
+}
+.slider {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  transform: translate(-1px, -8px);
+  opacity: 0;
+}
+.slider-track {
+  position: relative;
+  z-index: 1;
+  transform: translateY(14px);
+  height: 8px;
+  border: 1px solid hsl(176, 50%, 47%);
+  border-radius: 50px;
+  width: 85%;
+  background-color: hsl(176, 50%, 47%);
+}
+/* .slider:hover + .thumb {
+  background-color: hsl(174, 77%, 80%);
+} */
+.slider-track-gray {
+  position: relative;
+  z-index: 0;
+  right: 0;
+  transform: translateY(6px);
+  height: 8px;
+  /* border: 1px solid hsl(224, 65%, 95%); */
+  border-radius: 50px;
+  width: 100%;
+  background-color: hsl(224, 65%, 95%);
+}
+
+.about_project {
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.about_project h4 {
+  font-size: 19px;
+  color: hsl(0, 0%, 0%);
+  font-family: "Commissioner", sans-serif;
+  padding-left: 55px;
+  margin-bottom: 5px;
+}
+
+.about_product_description p {
+  font-size: 16px;
+  color: hsl(0, 0%, 48%);
+  /* padding: 15px; */
+  font-family: "Commissioner", sans-serif;
+  line-height: 35px;
+}
+.about_product_description {
+  width: 82%;
+  margin: 0px auto;
+}
+
+.pledge {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid hsl(0, 0%, 48%);
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.pledge_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 30px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.pledge_title h5 {
+  font-size: 22px;
+  color: hsl(0, 0%, 0%);
+  font-family: "Commissioner", sans-serif;
+}
+
+.pledge_title h7 {
+  font-size: 16px;
+  color: hsl(176, 50%, 47%);
+  font-family: "Commissioner", sans-serif;
+}
+.pledge_description {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pledge_description p {
+  font-size: 15px;
+  color: hsl(0, 0%, 48%);
+  font-family: "Commissioner", sans-serif;
+}
+
+.pledge_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pledge_footer h3 {
+  font-size: 24px;
+  color: hsl(0, 0%, 0%);
+  font-family: "Commissioner", sans-serif;
+}
+.pledge_footer_subtext {
+  font-size: 14px;
+  color: hsl(0, 0%, 48%);
+}
+
+.pledge_footer button {
+  /* font-size: 16px; */
+  border: 1px solid hsl(176, 50%, 47%);
+  background-color: hsl(176, 50%, 47%);
+  color: #fff;
+  font-family: "Commissioner", sans-serif;
+  padding: 10px 15px;
+  border-radius: 20px;
+  /* height: 35px;
+    width: 150px; */
+}
+
+.pledge_footer button:hover{
+  cursor: pointer;
+}
+
+.mahogany{
+    opacity: 0.5;
+}
+.mahogany:hover{
+    cursor: not-allowed;
+}
+.out-of-stock{
+    background-color: hsl(0, 0%, 48%) !important;
+    border: 1px solid hsl(0, 0%, 48%) !important;
+}
+.out-of-stock:hover{
+    background-color: hsl(0, 0%, 48%);
+    cursor: not-allowed;
+}
+
+.product_modal {
+  padding: 10px;
+  margin: 10px auto;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: #bababa; */
+}
+.product_modal_content {
+  margin: 10px auto;
+  /* height: 900px; */
+  height: auto;
+  padding: 25px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 20px;
+  background-color: #fff;
+  /* animation-name: modalopen;
+  animation-duration: var(--modal-duration); */
+}
+
+/* .product_modal h3 {
+  font-size: 22px;
+  color: hsl(0, 0%, 0%);
+  font-family: "Commissioner", sans-serif;
+} */
+
+.product_modal p {
+  font-size: 16px;
+  color: hsl(0, 0%, 48%);
+  font-family: "Commissioner", sans-serif;
+}
+
+/* .pledge_input{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid hsl(0, 0%, 48%);
+    padding: 5px;
+} */
+
+.product_modal_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product_modal_header h3{
+  margin: 0;
+}
+.pledge_card{
+  width: 70%;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 48%);
+  border-radius: 12px;
+}
+
+.pledge_card_title{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.pledge_card_title h3:hover{
+  color: hsl(176, 50%, 47%);
+}
+
+/* .pledge_card_header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+
+} */
+
+.pledge1{
+  margin: 0px 8px;
+  color: hsl(176, 50%, 47%);
+  font-size: 16px;
+}
+
+.pledge_header{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items:stretch;
+  width: 60%;
+}
+
+.pledge_header_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity-left{
+    display: flex;
+    align-items: center;
+
+}
+.quantity-left p{
+    margin-left: 4px;
+}
+
+input[name="pledge"]{
+    display: none;
+}
+label section{
+    display: block;
+}
+
+.checkmark{
+    display: block;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 90%);
+}
+.checkmark::after{
+    background-color: hsl(176, 50%, 47%);
+    content: "";
+    display: none;
+    width: 15px;
+    height: 15px;
+    position: inherit;
+    border-radius: 50%;
+    position: relative;
+    left: 4px;
+    top: 4px;
+}
+input[name="pledge"]:checked~.checkmark::after{
+    display: block;
+}
+.enter-pledge {
+    /* height: 0; */
+    overflow: hidden;
+    transition: all 0.5s;
+    display: none;
+}
+
+.enter-pledge p{
+    text-align: center;
+}
+
+/* .modal-calculation-number{
+    margin: 0;
+} */
+.enter-pledge::before{
+    content: " ";
+    display: block;
+    width: calc(100% + 40px);
+    position: relative;
+    left: -20px;
+    height: 1px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.pledge-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+   
+}
+.pledge-value{
+    width: 40%;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.pledge-dollar-sign{
+    color: hsl(0, 0%, 90%);
+    margin-right: 5px;
+}
+.pledge-value-input{
+    width: 70%;
+    border: none;
+    font-family: 'Commissioner', Courier, monospace;
+    font-weight: 700;
+    font-size: 1rem;
+  
+}
+.pledge-value-input:focus{
+    outline: none;
+}
+
+.pledge-buttons{
+  background-color: hsl(176, 50%, 47%);
+  padding: 12px;
+  border: 1px solid hsl(176, 50%, 47%);
+  font-family: 'Commissioner', Courier, monospace;
+  border-radius: 20px;
+  width: 40%;
+  color: #fff;
+}
+
+.pledge-buttons:hover{
+  cursor: pointer;
+}
+
+.success_modal_button{
+  background-color: hsl(176, 50%, 47%);
+  padding: 12px;
+  border: 1px solid hsl(176, 50%, 47%);
+  font-family: 'Commissioner', Courier, monospace;
+  border-radius: 20px;
+  width: 30%;
+  color: #fff;
+  /* margin: 0 auto; */
+}
+
+.success_modal_button:hover{
+  cursor: pointer;
+}
+
+.active{
+  /* display: block; */
+  /* height: 300px; */
+   background-color: hsl(176, 50%, 47%);
+   /* border: 5px solid #fff; */
+}
+
+.active_pledge{
+  border: 5px solid hsl(176, 50%, 47%);
+}
+
+.success_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  /* background-color:#fff; */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* opacity: 0.9; */
+   /* align-items: center; */
+}
+
+.success_modal_content {
+  margin: 9% auto;
+  width: 40%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  /* animation-name: modalopen;
+  animation-duration: var(--modal-duration); */
+}
+
+.success_modal_header h2{
+  color: #000;
+  margin-top: 7px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.success_modal_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12%;
+}
+
+.success_modal_header {
+  background: #fff;
+  padding: 10px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* margin: 2px auto;
+  width: 60%; */
+}
+
+.success_modal_body {
+  padding: 8px 15px;
+  background: #fff;
+  /* margin: 0 auto; */
+}
+
+.success_modal_footer {
+  background: #fff;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
