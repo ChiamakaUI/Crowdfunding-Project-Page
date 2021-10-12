@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <div class="parent_element">
+    <main class="parent_element">
       <div class="first_child">
         <nav>
           <div id="logo">
@@ -21,7 +21,10 @@
             <li>Discover</li>
             <li>Get Started</li>
           </ul>
+
+          <img src="./images/icon-hamburger.svg" alt="mobile menu" id="first_child_img">
         </nav>
+        <div id="mobile_menu"></div>
       </div>
       <section class="product_description">
         <div class="mastercraft_logo">
@@ -93,7 +96,7 @@
         <div class="pledge">
           <div class="pledge_title">
             <h5>Bamboo Stand</h5>
-            <h7>Pledge $25 or more</h7>
+            <h6>Pledge $25 or more</h6>
           </div>
           <div class="pledge_description">
             <p>
@@ -113,7 +116,7 @@
         <div class="pledge">
           <div class="pledge_title">
             <h5>Black Edition Stand</h5>
-            <h7>Pledge $75 or more</h7>
+            <h6>Pledge $75 or more</h6>
           </div>
           <div class="pledge_description">
             <p>
@@ -132,7 +135,7 @@
         <div class="pledge mahogany">
           <div class="pledge_title">
             <h5>Mahogany Special Edition</h5>
-            <h7>Pledge $200 or more</h7>
+            <h6>Pledge $200 or more</h6>
           </div>
           <div class="pledge_description">
             <p>
@@ -149,7 +152,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
     <!-- MODAL -->
 
     <section class="product_modal">
@@ -184,7 +187,7 @@
             <p>Enter your pledge</p>
 
             <form class="pledge-form">
-              <div class="pledge-value" aria-label="0 dollars">
+              <div class="pledge-value">
                 <span class="pledge-dollar-sign">$</span>
                 <input
                   type="number"

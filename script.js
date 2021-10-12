@@ -5,7 +5,8 @@ let bamboo = document.getElementById("bamboo");
 let black = document.getElementById("black");
 let pledge_buttons = document.querySelectorAll(".pledge-buttons");
 let successBtn = document.getElementById("successBtn");
-
+let mobileMenuButton = document.getElementById("first_child_img");
+let mobileMenu = document.getElementById("mobile_menu");
 
 // pledge_buttons.forEach((btn) =>
 //   btn.addEventListener("click", calculatePledges)
@@ -58,7 +59,7 @@ for (let i = 0; i < pledge_buttons.length; i++) {
       let totalAmount = amountBacked + pledgeInput;
       let totalBackers = backer++;
 
-        // console.log(totalBackers);
+      // console.log(totalBackers);
 
       document.getElementById("amount_backed").innerHTML = totalAmount;
       document.getElementById("total_backers").innerHTML = backer++;
@@ -97,8 +98,6 @@ function decreaseBlackAmountLeft() {
     blackAmount[j].innerText = amountNumber - 1;
   }
 }
-
-
 
 function openSuccessModal(e) {
   closeProductModal(e);
@@ -147,7 +146,7 @@ black.addEventListener("click", function () {
 
 backProject.addEventListener("click", showProductModal);
 
-function showProductModal() {
+function showProductModal(e) {
   //   e.preventDefault();
 
   let modal = document.getElementsByClassName("product_modal")[0];
@@ -163,18 +162,31 @@ function openForm() {
   for (i = 0; i < pledge.length; i++) {
     let container = pledge[i].parentElement;
     let checkMark = pledge[i].querySelector(".checkmark");
-    // console.log(checkMark)
-    // console.log(container);
 
-    pledge[i].addEventListener("click", function () {
-      // console.log('heyy')
+    pledge[i].addEventListener("click", function (e) {
+      console.log(e.target);
 
       // let emptyPledge = container.getElementsByClassName("enter-pledge");
       checkMark.classList.add("active");
       container.classList.add("active_pledge");
-      let emptyPledge = container.querySelector(".enter-pledge");
 
-      emptyPledge.style.display = "block";
+      // let emptyPledge = container.querySelector(".enter-pledge");
+
+      for (let j = 0; j < pledge.length; j++) {
+        // const element = pledge[j];
+
+        if (pledge[j] !== e.target) {
+          let emptyPledge =
+            pledge[j].parentElement.querySelector(".enter-pledge");
+          if (emptyPledge) {
+            emptyPledge.style.display = "none";
+          }
+        }
+      }
+
+      e.target.parentElement.querySelector(".enter-pledge").style.display =
+        "block";
+      // e.target.parentElement.classList.add("active_pledge");
     });
   }
 }
@@ -195,3 +207,32 @@ function closeProductModal(e) {
 // function openPledgeForm() {
 //     console.log('hey')
 // }
+
+mobileMenuButton.addEventListener("click", displayMobileMenu, { once: true });
+
+function displayMobileMenu(e) {
+  e.preventDefault();
+  console.log('heyy')
+
+  let menu = document.createElement("ul");
+  let menuItem1 = document.createElement("li");
+  let menuItemText1 = document.createTextNode("About");
+  let menuItem2 = document.createElement("li");
+  let menuItemText2 = document.createTextNode("Discover");
+  let menuItem3 = document.createElement("li");
+  let menuItemText3 = document.createTextNode("Get Started");
+ 
+
+  menuItem1.appendChild(menuItemText1);
+  menuItem2.appendChild(menuItemText2);
+  menuItem3.appendChild(menuItemText3);
+
+  menu.appendChild(menuItem1);
+  menu.appendChild(menuItem2);
+  menu.appendChild(menuItem3);
+  
+
+  menu.classList.add("mobileMenuList");
+
+  mobileMenu.appendChild(menu);
+}
